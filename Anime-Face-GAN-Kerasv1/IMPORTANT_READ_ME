@@ -1,4 +1,4 @@
 Please note before running the Trainingv3.1.6_ANIMEFACE.py please open the file and change the data_dir, data and image_sav_dir variables
-to the appropriate directories that match your system before running Trainingv3.1.6_ANIMEFACE.py otherwise the Training file will not excute proerly.
+to the appropriate directories that match your system before running Trainingv3.1.6_ANIMEFACE.py otherwise the Training file will not excute properly.
 
 Please also do not remove the imagesaves folder. Though empty the code requires this folder for the training file to run properly.
