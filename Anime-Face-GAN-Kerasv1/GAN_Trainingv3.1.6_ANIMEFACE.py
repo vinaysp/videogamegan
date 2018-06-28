@@ -48,7 +48,7 @@ def denorm_img(img):
     return img.astype(np.uint8)
 
 
-def sample_from_dataset(batch_size, image_shape, data_dir = '/Users/vinay/Anime-Face-GAN-Kerasv1/faces2', data = '/Users/vinay/Anime-Face-GAN-Kerasv1/faces2/*jpg'):
+def sample_from_dataset(batch_size, image_shape, data_dir = '/faces2', data = '/faces2/*jpg'):
     sample_dim = (batch_size,) + image_shape
     sample = np.empty(sample_dim, dtype=np.float32)
     all_data_dirlist = list(glob.glob(data_dir))
@@ -125,7 +125,7 @@ batch_size = 70
 
 image_shape = None
 
-img_save_dir = "/Users/vinay/Anime-Face-GAN-Kerasv1/imagesaves"
+img_save_dir = "/imagesaves"
 
 save_model = False
 
@@ -133,7 +133,7 @@ save_model = False
 
 #image_shape = (96,96,3)
 image_shape = (64,64,3)
-data_dir =  "/Users/vinay/Anime-Face-GAN-Kerasv1/faces2/*jpg"
+data_dir =  "/faces2/*jpg"
 #data_dir = "E:\\GAN_Datasets\\curl\\online_ds\\thumb\\*\\*.png"
 log_dir = img_save_dir
 save_model_dir = img_save_dir
